@@ -3,6 +3,8 @@ Unity skin shader to approximate subsurface-scattering in realtime
 
 ![image](https://github.com/user-attachments/assets/afb08ccf-7c2d-4da6-bc51-977a482efdef)
 
+## REQUIREMENTS
+z3y's Graphlit: https://github.com/z3y/Graphlit
 
 ## Credits
 
