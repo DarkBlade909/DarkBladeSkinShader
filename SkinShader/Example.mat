@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Example
-  m_Shader: {fileID: 4334904775004639687, guid: 12a8e3117337ee840a6f96b38fcde06d,
+  m_Shader: {fileID: 4334904775004639687, guid: f091a6f2635938c47ae147594ad1c368,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -105,6 +105,7 @@ Material:
     - _Parallax: 0.02
     - _Properties: 0
     - _Roughness: 0.477
+    - _SSSHue: 0
     - _SSSMidpoint: 0.5
     - _SSSStrength: 1
     - _SmoothnessTextureChannel: 0
