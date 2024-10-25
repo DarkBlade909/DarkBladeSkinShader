@@ -1,10 +1,17 @@
 # DarkBlade Skin Shader
-Unity skin shader to approximate subsurface-scattering in realtime
+Skin shader to approximate subsurface-scattering in realtime
 
-![image](https://github.com/user-attachments/assets/afb08ccf-7c2d-4da6-bc51-977a482efdef)
+![SSSComparison2](https://github.com/user-attachments/assets/36d3021f-acb2-4f5c-bfb3-cb3aadfec054)
+
 
 ## REQUIREMENTS
-z3y's Graphlit: https://github.com/z3y/Graphlit
+- z3y's Graphlit: https://github.com/z3y/Graphlit
+## Features
+- LUT-based pre-integrated subsurface scattering
+- Mip-based light diffusion approximation
+- Dual-Lobe Specular
+- Geometric Specular Anti-aliasing
+- Detail map
 
 ## Credits
 
