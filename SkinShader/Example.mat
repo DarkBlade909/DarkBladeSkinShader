@@ -20,11 +20,15 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _DualLobePower
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CavityMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -84,6 +88,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WrinkleCompress:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WrinkleExpand:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _17e79980_ee91_4fd3_a64b_4b8b6b4c543f: 0
@@ -94,9 +106,13 @@ Material:
     - _DetailNormalScale: 1
     - _DetailTiling: 20
     - _DstBlend: 0
+    - _DualLobeGloss: 0
+    - _DualLobePower: 0
+    - _FlipGreen: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _IndirectSpec: 0.5
     - _Metallic: 0
     - _MetallicStrength: 1
     - _Mode: 0
@@ -116,6 +132,8 @@ Material:
     - _Thickness: 0.5
     - _Tiling: 1
     - _UVSec: 0
+    - _WrinkleCompressStrength: 0
+    - _WrinkleExpandStrength: 0
     - _ZWrite: 1
     m_Colors:
     - _142f39ba_f95f_4c9b_8b0e_976832b983bb: {r: 0, g: 0, b: 0, a: 0}
