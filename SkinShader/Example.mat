@@ -12,13 +12,23 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ValidKeywords:
+  - _CLEARCOAT
+  - _DETAIL
+  - _GSAA
+  m_InvalidKeywords:
+  - _ALPHAFADE_ON
+  - _VRCLV
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
+    folder_Clearcoat: 1
+    folder_Detail: 1
+    folder_Rendering Options: 1
+    folder_Subsurface Scattering: 1
   disabledShaderPasses: []
   m_LockedProperties: _DualLobePower
   m_SavedProperties:
@@ -28,7 +38,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpMapClear:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _CavityMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearcoatRoughnessMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -36,12 +54,24 @@ Material:
         m_Texture: {fileID: 2800000, guid: a6ae58f8777e2124b9766f14e9fe3ddc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 30, y: 30}
+        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMRO:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormal:
+        m_Texture: {fileID: 2800000, guid: c2926a921a0d99e4d9b4645fb858cdde, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
@@ -57,6 +87,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Metallic:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGloss:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -76,7 +110,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _PenetrationMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _RoughnessMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -96,47 +138,94 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
+    m_Ints:
+    - _LOD: 0
+    - _Samples: 0
     m_Floats:
     - _17e79980_ee91_4fd3_a64b_4b8b6b4c543f: 0
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 0
+    - _BlurStrength: 0
     - _BumpScale: 1
+    - _ClearcoatNormalStrength: 1
+    - _ClearcoatRoughness: 0.41
+    - _ClearcoatStrength: 0.713
     - _Cull: 2
     - _Cutoff: 0.5
+    - _Cutoff2: 0.5
+    - _DetailAlbedoStrength: 0
+    - _DetailFoldout: 0
     - _DetailNormalMapScale: 1
+    - _DetailNormalPower: 1
     - _DetailNormalScale: 1
+    - _DetailOcclusionStrength: 0
+    - _DetailRoughBias: 0
+    - _DetailRoughPower: 1
     - _DetailTiling: 20
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _DualLobeGloss: 0
     - _DualLobePower: 0
+    - _EmissionStrength: 1
     - _FlipGreen: 0
+    - _GSAAThreshold: 0.1
+    - _GSAAVariance: 0.05
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GraphlitMaterial: 1
     - _IndirectSpec: 0.5
+    - _LightingSettings: 0
     - _Metallic: 0
     - _MetallicStrength: 1
-    - _Mode: 0
+    - _Mode: 2
+    - _NormalPower: 1
     - _NormalStrength: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _PenetrationStrength: 0
     - _Properties: 0
-    - _Roughness: 0.477
+    - _QueueOffset: 0
+    - _Reflectance: 0.5
+    - _Roughness: 0.627
+    - _SSSAO: 0
+    - _SSSFoldout: 0
     - _SSSHue: 0
     - _SSSMidpoint: 0.5
     - _SSSStrength: 1
     - _SmoothnessTextureChannel: 0
+    - _SpecularAO: 1
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
+    - _Surface: 0
     - _SurfaceDiffusion: 1
     - _SurfaceOptions: 0
-    - _Thickness: 0.5
+    - _Thickness: 0.25
     - _Tiling: 1
+    - _Toggle_CLEARCOAT: 1
+    - _Toggle_DETAIL: 1
+    - _Toggle_DITHER: 0
+    - _Toggle_FLIPBACKFACENORMALS: 0
+    - _Toggle_GSAA: 1
+    - _Toggle_SHARPALPHA: 0
+    - _Toggle_UEFlip: 0
+    - _Toggle_UEFlipClearcoat: 0
+    - _Toggle_USEBASENORMAL: 0
+    - _Toggle_VRCLV: 1
+    - _TransClipping: 0
     - _UVSec: 0
     - _WrinkleCompressStrength: 0
     - _WrinkleExpandStrength: 0
+    - _WrinkleFoldout: 0
+    - _ZTest: 4
     - _ZWrite: 1
+    - __reset: 0
     m_Colors:
     - _142f39ba_f95f_4c9b_8b0e_976832b983bb: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.6415094, g: 0.49053192, b: 0.43876824, a: 1}
+    - _70561dcc_7495_4cd2_bc8c_e00177b5fd3c: {r: 0, g: 0, b: 0, a: 0}
+    - _AlphaRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _Color: {r: 0.7075472, g: 0.5320652, b: 0.45723566, a: 0.87058824}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SSSColor: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
